@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>fmTV</Name>
+  <Repository>mmagtech/fmtv-downloader:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/MMagTech/fmTV</Project>
+  <Overview/>
+  <Category>MediaApp:Video MediaApp:Music</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://imgur.com/tSTjbWn</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1718735927</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="LASTFM_USERNAME" Target="LASTFM_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">MMag05</Config>
+  <Config Name="LASTFM_API_KEY" Target="LASTFM_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">3252d6733c50509f36c3e55e9654357f</Config>
+  <Config Name="DOWNLOAD_PATH" Target="DOWNLOAD_PATH" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/downloads</Config>
+  <Config Name="APP_DATA_PATH" Target="APP_DATA_PATH" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/appdata</Config>
+  <Config Name="POLLING_INTERVAL" Target="POLLING_INTERVAL" Default="" Mode="" Description="Polling Value In Seconds - Looks for last downloaded video and scrobbled after it is downloadedd" Type="Variable" Display="always" Required="false" Mask="false">30</Config>
+  <Config Name="/downloads" Target="/downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/data/media/videos/</Config>
+  <Config Name="/appdata" Target="/appdata" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fmTV/</Config>
+</Container>
