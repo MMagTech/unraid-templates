@@ -17,16 +17,15 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1718760658</DateInstalled>
+  <DateInstalled>1718812737</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="LASTFM_USERNAME" Target="LASTFM_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">MMag05</Config>
-  <Config Name="LASTFM_API_KEY" Target="LASTFM_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">3252d6733c50509f36c3e55e9654357f</Config>
-  <Config Name="YOUTUBE_API_KEY" Target="YOUTUBE_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">AIzaSyDtsrtGo0bCchceKj1Q84BEvNp7S7QWUfs</Config>
-  <Config Name="POLLING_INTERVAL" Target="POLLING_INTERVAL" Default="" Mode="" Description="Polling Value In Seconds - Looks for last downloaded video and scrobbled after it is downloadedd" Type="Variable" Display="always" Required="true" Mask="false">30</Config>
-  <Config Name="/downloads" Target="/downloads" Default="" Mode="rw" Description="Path for Final Output After Processing" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/data/media/fmTV/</Config>
-  <Config Name="/appdata" Target="/appdata" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/fmTV/</Config>
-  <Config Name="DOWNLOAD_PATH" Target="DOWNLOAD_PATH" Default="" Mode="" Description="Temporary Folder Variable for Downloads" Type="Variable" Display="advanced" Required="false" Mask="false">/downloads</Config>
-  <Config Name="APP_DATA_PATH" Target="APP_DATA_PATH" Default="" Mode="" Description="AppData Variable for Persistent Data" Type="Variable" Display="advanced-hide" Required="false" Mask="false">/appdata</Config>
+  <Config Name="LASTFM_USERNAME" Target="LASTFM_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="LASTFM_API_KEY" Target="LASTFM_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="POLLING_INTERVAL" Target="POLLING_INTERVAL" Default="" Mode="" Description="Polling Value In Seconds - Looks for last downloaded video and scrobbled after it is downloadedd" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="/downloads" Target="/downloads" Default="" Mode="rw" Description="Path for Final Output After Processing" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="/appdata" Target="/appdata" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="DOWNLOAD_PATH" Target="DOWNLOAD_PATH" Default="" Mode="" Description="Temporary Folder Variable for Downloads. Do not Alter" Type="Variable" Display="advanced" Required="false" Mask="false">/downloads</Config>
+  <Config Name="APP_DATA_PATH" Target="APP_DATA_PATH" Default="" Mode="" Description="AppData Variable for Persistent Data. Do not Alter" Type="Variable" Display="advanced-hide" Required="false" Mask="false">/appdata</Config>
 </Container>
