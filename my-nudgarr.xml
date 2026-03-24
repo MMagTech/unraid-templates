@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>nudgarr</Name>
+  <Repository>mmagtech/nudgarr:latest</Repository>
+  <Registry>https://registry.hub.docker.com</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/MMagTech/nudgarr/issues</Support>
+  <Project>https://github.com/MMagTech/nudgarr</Project>
+  <ReadMe>https://github.com/MMagTech/nudgarr/wiki</ReadMe>
+  <Overview>Nudgarr keeps your Radarr and Sonarr libraries improving automatically — scheduling searches for missing content and quality upgrades so you don't have to.&#xD;&#xD;Runs on a configurable cron schedule or on demand. Supports multiple Radarr and Sonarr instances independently. Rate-limiting built in via cooldowns, batch size, sleep, and jitter to keep your indexers happy.&#xD;&#xD;Features include: Cutoff Unmet searches, Backlog Nudges for missing content, auto-exclusion of titles that never download, confirmed import tracking with turnaround times, tag and quality profile filters per instance, per-instance overrides for different cooldowns and caps, Apprise push notifications, and a full mobile UI that works in portrait and landscape.</Overview>
+  <Category>MediaApp:Video</Category>
+  <WebUI>http://[IP]:[PORT:8085]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/MMagTech/unraid-templates/main/nudgarr.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/MMagTech/nudgarr/main/docs/icon.png</Icon>
+  <ExtraParams>--cap-drop=ALL --cap-add=CHOWN --cap-add=SETUID --cap-add=SETGID --read-only --tmpfs /tmp:rw,noexec,nosuid,nodev,size=64m --security-opt no-new-privileges=true --pids-limit 50 --memory=128m --cpus=0.5</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port" Target="8085" Default="8085" Mode="tcp" Description="Change if 8085 is already in use." Type="Port" Display="always" Required="true" Mask="false">8085</Config>
+  <Config Name="Config Path" Target="/config" Default="/mnt/user/appdata/nudgarr" Mode="rw" Description="Path to your Nudgarr config and data files." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/nudgarr</Config>
+  <Config Name="TZ" Target="TZ" Default="UTC" Mode="" Description="Timezone for cron schedule. e.g. America/New_York, Europe/London. If not set, defaults to UTC. See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" Type="Variable" Display="always" Required="false" Mask="false">UTC</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User ID to run Nudgarr as. Match your Unraid user." Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Group ID to run Nudgarr as. Match your Unraid group." Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
+  <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Mode="" Description="Optional. A persistent key is automatically created and saved to /config/nudgarr-secret.key on first start. Only set this if you want to manage the key yourself." Type="Variable" Display="always" Required="false" Mask="true"/>
+</Container>
